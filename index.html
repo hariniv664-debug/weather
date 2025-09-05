@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eaf6ff;
+            color: #333;
+        }
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #023e8a;
+            text-align: center;
+            padding: 12px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffd60a;
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .forecast {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        form {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        form input, form button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #0077b6;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #023e8a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+        <p>Stay updated with the latest weather conditions ☀️🌧️❄️</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#forecast">Forecast</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Weather</h2>
+        <p>
+            Weather refers to the day-to-day atmospheric conditions such as temperature,
+            humidity, precipitation, and wind. Forecasting helps people prepare
+            for different weather conditions in advance.
+        </p>
+    </section>
+
+    <section id="forecast">
+        <h2>Weekly Forecast</h2>
+        <div class="forecast">
+            <div class="card">
+                <h3>Monday</h3>
+                <p>☀️ Sunny</p>
+                <p>28°C</p>
+            </div>
+            <div class="card">
+                <h3>Tuesday</h3>
+                <p>🌤️ Partly Cloudy</p>
+                <p>25°C</p>
+            </div>
+            <div class="card">
+                <h3>Wednesday</h3>
+                <p>🌧️ Rainy</p>
+                <p>22°C</p>
+            </div>
+            <div class="card">
+                <h3>Thursday</h3>
+                <p>⛅ Cloudy</p>
+                <p>24°C</p>
+            </div>
+            <div class="card">
+                <h3>Friday</h3>
+                <p>⛈️ Thunderstorms</p>
+                <p>20°C</p>
+            </div>
+            <div class="card">
+                <h3>Saturday</h3>
+                <p>❄️ Snow</p>
+                <p>-2°C</p>
+            </div>
+            <div class="card">
+                <h3>Sunday</h3>
+                <p>🌤️ Clear</p>
+                <p>27°C</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" required><br>
+
+            <button type="submit">Subscribe for Updates</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Weather Forecast | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
